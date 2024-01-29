@@ -1,1 +1,1 @@
-{"mappings":"AAAA;;;;;AAGA","sources":["src/style.css"],"sourcesContent":["h1 {color: green;}\r\nh1 {font-size: 40;}\r\n\r\nh2 {color: brown;}\r\nh2 {font-size: 30;}"],"names":[],"version":3,"file":"index.2cdaf7bc.css.map","sourceRoot":"/__parcel_source_root/"}
+{"mappings":"AAAA;;;;;AAGA;;;;;AAGA","sources":["src/style.css"],"sourcesContent":["h1 {color: green;}\r\nh1 {font-size: 40;}\r\n\r\nh2 {color: brown;}\r\nh2 {font-size: 30;}\r\n\r\ntitle {color: aquamarine;}"],"names":[],"version":3,"file":"index.2cdaf7bc.css.map","sourceRoot":"/__parcel_source_root/"}
