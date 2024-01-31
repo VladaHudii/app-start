@@ -17,14 +17,33 @@
         </nav>
     </header>
     <main>
+        <!--
+            Не помилка, але краще розмістити в <header> якщо не плануєте подавати article або параграф тексту під h1 
+        -->
         <h1><strong>Most popular position</strong></h1>
 
         <h2>About</h2>
+
+        
+            <!-- 
+               Достатньо було подати все в одному <p>.
+                Або ж виділити через <h3> якщо другий є підзаголовком.
+            -->
         <p>Briefly about our goods.</p>
 
         <p>Shortly about quality and price.</p>
 
         <section>
+            <!-- 
+                <figure> і <figcaption> використано не вірно.
+                Ось правильна вкладеність елементів:
+                    <figure>
+                        <img ... />
+                        <figcaption>...</figcaption>
+                    </figure>
+
+                У вашому випадку це не семантично!
+            -->
         <figure><img src="https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/30/3067952/Suszarka-DYSON-Supersonic-New-Set-Fuksja-lifestyle-3.jpg" alt="Dyson"></figure>
             <figcaption role="title" aria-label="hairdryer-dyson" tabindex="0" style="font-size: 17; text-align: left;"><a href="https://www.mediaexpert.pl/agd-male/zdrowie-i-uroda/suszarki-do-wlosow/suszarka-dyson-supersonic-stal-fuksja-new-set?gad_source=1&gclid=CjwKCAiAtt2tBhBDEiwALZuhAFxqRIXUqMDY2oSqT_Mtzn55ATZr8bRAvJ9gfXHvphDAkKwnQEvHtxoCycIQAvD_BwE" target="_blank" rel="nofollow">Hairdryer Dyson</a></figcaption>
             <ul class="description-dyson">
@@ -54,6 +73,25 @@
             </ul>  
         </section>
 
+        
+            <!-- 
+               Трішки наплутано.
+                <section> використовуємо для поділу на логічні секції струкутуру документа.
+                У випадку із <footer>, якщо потрібно подати авторські дані можемо використати просто <p> або ж <ul>
+                Наприклад:
+                    <footer>
+                        <ul>
+                            <li>Copywriter: Mila Snitich</li>
+                            <li>Editing: Jack Milosh</li>
+                        </ul>
+                        <ul>
+                            <li><a role="menuitem" aria-label="instagram-logo" href="#"><img /></a></li>
+                            <li><a role="menuitem" aria-label="facebook-logo" href="#"><img /></a></li>
+                            <li><a role="menuitem" aria-label="linkedin-logo" href="#"><img /></a></li>
+                        </ul>
+                        <p>@All rights reserved</p>
+                    </footer>
+            -->
         <footer>
             <section>
             <aside><strong>Copywriter</strong> Mila Snitich</aside>
