@@ -8,34 +8,55 @@
     <script src="./src/index.js" defer></script> 
 </head>
 <body>
-    <article>
-        <header>
-            <h1>Main article name</h1>
-    <nav>
-        <ul>
-            <li><a href="https://robotdreams.hu/about" target="_blank" rel="nofollow">About us</a>  </li>
-            <li><a href="https://robotdreams.hu/blog" target="_blank" rel="nofollow">Our articles</a>  </li>
-            <li><a href="https://robotdreams.hu/course" target="_blank" rel="nofollow">Our courses</a>  </li>
-        </ul>
-    </nav>
+    <article> <!-- зайви тег -->
+    <header>
+        <h1>Main article name</h1> <!-- добре -->
+        <nav>  <!-- добре -->
+            <ul>  <!-- добре -->
+                <li><a href="https://robotdreams.hu/about" target="_blank" rel="nofollow">About us</a>  </li>
+                <li><a href="https://robotdreams.hu/blog" target="_blank" rel="nofollow">Our articles</a>  </li>
+                <li><a href="https://robotdreams.hu/course" target="_blank" rel="nofollow">Our courses</a>  </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <!--
+            Поріаняйте ваш і код який я вам пропоную нижче, розберіться із послідовністю і логічним призначенням тегів.
+            
+            <section>
+                <h2>Theme-1</h2>
+                <article>
+                    <h3>Lector's name</h3>
+                    <p style="color: blueviolet;">Paragraph</p>
+                    <ul class="list" style="color: blueviolet;">
+                        <li>List-1</li>
+                        <li>List-2</li>
+                        <li>List-3</li>
+                    </ult>
+                    <figure>
+                        <img src="https://skvot-site-static.fra1.digitaloceanspaces.com/hu/ckeditor/323-butortervezes/works/studio-box.jpg" alt="equipment" />
+                        <figcaption style="font-size: 13; text-align: center;">Image description</figcaption>
+                    </figure>
+                </article>
+            </section>
+        -->
         <div>
-        <h2>Theme-1</h2>
-        <h5>Lector's name</h5>
-        
-        <p style="color: blueviolet;">Paragraph</p>
-        <il class="list" style="color: blueviolet;">
-            <li>List-1</li>
-            <li>List-2</li>
-            <li>List-3</li>
-        </il>
-        
-        <figure><img src="https://skvot-site-static.fra1.digitaloceanspaces.com/hu/ckeditor/323-butortervezes/works/studio-box.jpg" alt="equipment" />
-        <figcaption style="font-size: 13; text-align: center;">Image description</figcaption>
-        </figure>
-    </div>
+            <h2>Theme-1</h2>
+            <h5>Lector's name</h5> <!-- Після заголовка 2го рівня, логічно мав би бути заголовок 3го =) -->
+            
+            <p style="color: blueviolet;">Paragraph</p>
+            <il class="list" style="color: blueviolet;"> <!-- Тегу <il> не існує -->
+                <li>List-1</li>
+                <li>List-2</li>
+                <li>List-3</li>
+            </il>
+
+            <!-- Зараз, із figure все добре -->
+            <figure><img src="https://skvot-site-static.fra1.digitaloceanspaces.com/hu/ckeditor/323-butortervezes/works/studio-box.jpg" alt="equipment" />
+            <figcaption style="font-size: 13; text-align: center;">Image description</figcaption>
+            </figure>
+        </div>
     
     <div>
         <h2>Theme-2</h2>
