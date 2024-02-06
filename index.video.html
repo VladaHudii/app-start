@@ -11,10 +11,17 @@
             const stopButton = document.getElementById("stopButton");
             const volumeRange = document.getElementById("volumeRange");
 
+            const initDefaultParams = () => {
+                video.volume = localStorage.getItem('volume');
+                volumeRange.value = localStorage.getItem('volume');
+            };
+
             playPauseButton.addEventListener('click', function() {
                 if ( video.paused ) {
-                video.play();
+                    video.currentTime = localStorage.getItem('time');
+                    video.play();
                 } else {
+                localStorage.setItem('time', video.currentTime);
                 video.pause();
                 }
             });
@@ -25,7 +32,10 @@
             
             volumeRange.addEventListener('input', function(){
                 video.volume = volumeRange.value;
+                localStorage.setItem('volume', volumeRange.value);
             });
+
+            initDefaultParams();
 
 
 

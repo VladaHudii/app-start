@@ -3,125 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <img src="https://litoprint.com.ua/image/catalog/baner/blog/logo.jpg" width="100" length="100" alt="logo-of-the-company">
-        <nav>
-            <ul>
-                <li><a href="https://robotdreams.hu/about" target="_blank" rel="nofollow">About us</a> </li>
-                <li><a href="https://robotdreams.hu/blog" target="_blank" rel="nofollow">Our articles</a> </li>
-                <li><a href="https://robotdreams.hu/course" target="_blank" rel="nofollow">Our courses</a> </li>
-            </ul>
-        </nav>
-<<<<<<< HEAD
-=======
-    </header>
-    <main>
-        <!--
-            Не помилка, але краще розмістити в <header> якщо не плануєте подавати article або параграф тексту під h1 
-        -->
->>>>>>> 4e5cdea648f507d2711c3bbc5d9d8ad17506c35c
-        <h1><strong>Most popular position</strong></h1>
-    
-    
-    <main>
-        <h2>About</h2>
-<<<<<<< HEAD
-        <p>Briefly about our goods,<br> 
-        Shortly about quality and price.</p>
+    <button onclick="toggleFullscreen()">Toggle Fullscreen</button>
+    <div id="fullscreenElement" style="border: 2px solid #000; width: 500px; height: 700px">
+    <p>This is an element to enter fullscreen.</p>
+    </div>
+    <script>function toggleFullscreen() {
+    var element = document.getElementById("fullscreenElement");
+    document.fullscreenElement;
+}
 
-        <section>
-        <figure><img src="https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/30/3067952/Suszarka-DYSON-Supersonic-New-Set-Fuksja-lifestyle-3.jpg" alt="Dyson">
-            <figcaption style="text-align: left; font-size: 17px"><a href="https://www.mediaexpert.pl/agd-male/zdrowie-i-uroda/suszarki-do-wlosow/suszarka-dyson-supersonic-stal-fuksja-new-set?gad_source=1&gclid=CjwKCAiAtt2tBhBDEiwALZuhAFxqRIXUqMDY2oSqT_Mtzn55ATZr8bRAvJ9gfXHvphDAkKwnQEvHtxoCycIQAvD_BwE" target="_blank" rel="nofollow">Hairdryer Dyson</a></figcaption>
-            </figure>
-=======
-
-        
-            <!-- 
-               Достатньо було подати все в одному <p>.
-                Або ж виділити через <h3> якщо другий є підзаголовком.
-            -->
-        <p>Briefly about our goods.</p>
-
-        <p>Shortly about quality and price.</p>
-
-        <section>
-            <!-- 
-                <figure> і <figcaption> використано не вірно.
-                Ось правильна вкладеність елементів:
-                    <figure>
-                        <img ... />
-                        <figcaption>...</figcaption>
-                    </figure>
-
-                У вашому випадку це не семантично!
-            -->
-        <figure><img src="https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/30/3067952/Suszarka-DYSON-Supersonic-New-Set-Fuksja-lifestyle-3.jpg" alt="Dyson"></figure>
-            <figcaption role="title" aria-label="hairdryer-dyson" tabindex="0" style="text-align: left; font-size: 17px"><a href="https://www.mediaexpert.pl/agd-male/zdrowie-i-uroda/suszarki-do-wlosow/suszarka-dyson-supersonic-stal-fuksja-new-set?gad_source=1&gclid=CjwKCAiAtt2tBhBDEiwALZuhAFxqRIXUqMDY2oSqT_Mtzn55ATZr8bRAvJ9gfXHvphDAkKwnQEvHtxoCycIQAvD_BwE" target="_blank" rel="nofollow">Hairdryer Dyson</a></figcaption>
->>>>>>> 4e5cdea648f507d2711c3bbc5d9d8ad17506c35c
-            <ul class="description-dyson">
-                <li>A hairdryer</li>
-                <li>Modern technology</li>
-                <li>Sale price 500$</li>
-            </ul>
-
-            <figure><img src="https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/19/1989427/Suszarka-BABYLISS-6709DE-front-2.jpg" alt="Babyliss">
-            <figcaption style="text-align: left; font-size: 17px"><a href="https://www.mediaexpert.pl/agd-male/zdrowie-i-uroda/suszarki-do-wlosow/suszarka-babyliss-6709de-ac?gad_source=1&gclid=CjwKCAiAtt2tBhBDEiwALZuhANgUQWqsOd569UeCADHp59A2A4qgeOpzaezia4N2XnSdZ5q6AsqnWRoCaLoQAvD_BwE" target="_blank" rel="nofollow">Hairdryer Babyliss</a></figcaption>
-            </figure>
-            <ul class="description-babyliss">
-                <li>A hairdryer</li>
-                <li>Super power</li>
-                <li>Early bird price 300$</li>
-            </ul>  
-
-            <figure><img src="https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/91/914930/Suszarka-REMINGTON-AC9140-PROLuxe-zestaw.jpg" alt="Remington">
-            <figcaption style="text-align: left; font-size: 17px"><a href="https://www.mediaexpert.pl/agd-male/zdrowie-i-uroda/suszarki-do-wlosow/suszarka-remington-ac9140-proluxe?gad_source=1&gclid=CjwKCAiAtt2tBhBDEiwALZuhAIewXY7iY_JozxgLdkxgCVEzi2EpJuBc1WfqI5-CjrE7ybj0cq538BoCdUQQAvD_BwE" target="_blank" rel="nofollow">Hairdryer Remington</a></figcaption>
-            </figure>
-            <ul class="description-remington">
-                <li>A hairdryer</li>
-                <li>Designed by Poly Smith</li>
-                <li>Price 350$</li>
-            </ul>  
-        </section>
-        </section></main>
-
-        
-            <!-- 
-               Трішки наплутано.
-                <section> використовуємо для поділу на логічні секції струкутуру документа.
-                У випадку із <footer>, якщо потрібно подати авторські дані можемо використати просто <p> або ж <ul>
-                Наприклад:
-                    <footer>
-                        <ul>
-                            <li>Copywriter: Mila Snitich</li>
-                            <li>Editing: Jack Milosh</li>
-                        </ul>
-                        <ul>
-                            <li><a role="menuitem" aria-label="instagram-logo" href="#"><img /></a></li>
-                            <li><a role="menuitem" aria-label="facebook-logo" href="#"><img /></a></li>
-                            <li><a role="menuitem" aria-label="linkedin-logo" href="#"><img /></a></li>
-                        </ul>
-                        <p>@All rights reserved</p>
-                    </footer>
-            -->
-        <footer>
-            <p><strong>Copywriter</strong> Mila Snitich</p>
-            <p><strong>Editing</strong> Jack Milosh</p>
-
-            <ul>
-            <li><a href="https://www.instagram.com/robotdreams.hu/" target="_blank" rel="nofollow">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" width="30" length="30" alt="intagram-logo"></a></li>
-                
-            <li><a href="https://www.facebook.com/robotdreamshungary" target="_blank" rel="nofollow">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" width="30" length="30" alt="facebook-logo"></a></li>
-                
-            <li><a href="https://www.linkedin.com/company/robot-dreams-hungary/" target="_blank" rel="nofollow">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" width="30" length="30" alt="linkedin-logo"></a></li>
-            </ul>      
-            
-            <p>@All rights reserved</p>
-        </footer>
-</main><script src="/app-start.3464ddca.js"></script></body>
+</script>
+<script src="/app-start.3464ddca.js"></script></body>
 </html>

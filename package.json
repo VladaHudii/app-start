@@ -7,7 +7,9 @@
     "start:dev": "parcel index.html",
     "start:resize": "parcel index.resize.html",
     "start:url": "parcel index.url.html",
-    "start:video": "parcel index.video.html"
+    "start:video": "parcel index.video.html",
+    "start:geo": "parcel index.geo.html",
+    "start:notification": "parcel index.notification.html"
   },
   "author": "",
   "license": "ISC",
