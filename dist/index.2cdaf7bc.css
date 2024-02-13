@@ -1,15 +1,204 @@
-h1 {
-  color: green;
-  font-size: 40px;
+@import "https://fonts.cdnfonts.com/css/dm-serif-display";
+body {
+  padding: 60px 0 0;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2 {
-  color: brown;
-  font-size: 30px;
+.container {
+  width: 1024px;
+  height: auto;
+  margin: 0 auto;
 }
 
-title {
-  color: #7fffd4;
+.logoLink {
+  float: left;
+  color: #000;
+  font-family: DM Serif Display, sans-serif;
+  font-size: 55px;
+  text-decoration: none;
+}
+
+.container > header {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.container > header .navigation {
+  height: 22px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.container > header ul.navigationList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container > header ul.navigationList > li {
+  float: left;
+}
+
+.container > header ul.navigationList > li a {
+  color: #575353;
+  padding: 0 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.container > header ul.navigationList > li a:hover {
+  color: #ff0;
+  text-decoration: underline;
+}
+
+.mainSection {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+.mainSection .post {
+  float: left;
+  box-sizing: border-box;
+  width: 70%;
+  margin: 0;
+  padding: 0 30px 0 0;
+}
+
+.mainSection .post .image {
+  width: 100%;
+}
+
+.mainSection .post figcaption {
+  float: left;
+  width: 100%;
+  padding: 30px;
+}
+
+.mainSection .post figcaption .title {
+  float: left;
+  letter-spacing: 3px;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 52px;
+}
+
+.mainSection .post figcaption .description {
+  float: right;
+  color: #5c5656;
+  width: 50%;
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.mainSection .post figcaption .readMoreLinks {
+  color: #fff;
+  background-color: #dc4e4e;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.mainSection .listNews {
+  float: right;
+  box-sizing: border-box;
+  color: #fff;
+  background: linear-gradient(78deg, #320b67, #766c8f);
+  width: 30%;
+  margin: 0;
+  padding: 30px;
+  list-style: none;
+}
+
+.mainSection ul.listNews > li:not(:first-child) {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.mainSection ul.listNews > li:not(:first-child):not(:last-child) {
+  color: #c7c6c4;
+  border-bottom: 1px solid;
+}
+
+.mainSection ul.listNews > li:first-child span {
+  color: #ff0;
+  font-size: 38px;
+}
+
+.mainSection ul.listNews > li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mainSection ul.listNews > li a:hover {
+  color: #ff0;
+}
+
+.mainSection ul.listNews > li p {
+  color: #b5b8b8;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.mainSection ul.listNews > li:last-child p {
+  padding-bottom: 0;
+}
+
+.articlesSection {
+  float: left;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.shortArticle {
+  float: left;
+  box-sizing: border-box;
+  width: 33.3%;
+  margin: 0;
+  padding: 0 15px 0 0;
+}
+
+.shortArticle img {
+  float: left;
+  width: 100px;
+}
+
+.articlesSection .shortArticle figcaption {
+  float: right;
+  box-sizing: border-box;
+  width: calc(100% - 100px);
+  padding-left: 15px;
+}
+
+.articlesSection .shortArticle figcaption .number {
+  color: #959f9b;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.articlesSection .shortArticle figcaption h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.articlesSection .shortArticle figcaption .description {
+  color: #959f9b;
 }
 
 /*# sourceMappingURL=index.2cdaf7bc.css.map */
