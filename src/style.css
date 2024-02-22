@@ -1,5 +1,474 @@
-h1 {color: green;}
-h1 {font-size: 40;}
+@import url('https://fonts.cdnfonts.com/css/rounded-sans');
 
-h2 {color: brown;}
-h2 {font-size: 30;}
+:root {
+    --fullWidth: 100%;
+    --spaceElement: 30px;
+}
+
+@media screen and (min-width: 901px) {
+    .mobileMenuButton {
+        display: none;
+    }
+   
+
+    
+
+    /* Navigation */
+    .back > header {
+        width: auto;
+        background-color: #2acae4;
+    }
+    .back > header .navigation {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: 55px;
+        height: 10px;
+    }
+    .back > header ul.navigationList {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .back > header ul.navigationList > li {
+        float: left;
+    }
+    .back > header ul.navigationList > li a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(247, 245, 245);
+        text-decoration: none;
+        padding: 0 15px;
+    }
+
+    .back .navigation li:nth-child(4) {
+        margin: -9px;
+        margin-left: 10px;
+    }
+
+    .back .navigationList .button {
+        display: inline-block;
+        background-color: rgb(250, 247, 247);
+        text-transform: none;
+        text-decoration: none;
+        color: black;
+        letter-spacing: 1px;
+        font-family: 'Rounded Sans', sans-serif;
+        font-weight: 400;
+        padding: 10px 20px;
+        border-radius: 25px;
+
+    }
+
+    .back> header ul.navigationList > li a:hover {
+        color: #d7a312;
+        text-decoration: dotted;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mobileMenuButton {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        height: 50px;    
+        background: transparent;
+        border: none;
+    }
+    .mobileMenuButton span {
+        display: block;
+        background-color: #333;
+        height: 3px;
+        width: 30px;
+        margin-bottom: 6px;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+    .mobileMenuButton.open span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .mobileMenuButton.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .mobileMenuButton.open span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+    .mainSection .post {
+        width: var(--fullWidth);
+        margin: 0 0 var(--spaceElement) 0;
+        padding: 0;
+    }
+
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Logo */
+.container > header .logoLink {
+    float: left;
+}
+.logoLink {
+    position: absolute;
+    font-size: 32px;
+    margin-left: auto;
+    margin: 30px;
+    margin-right: auto;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+/* Main seaction */
+
+.back {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 9px;
+    font-family: 'Rounded Sans', sans-serif;
+    transform: translate(-50%, -50%);
+}
+
+.arrow {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    font-size: 124px;
+    color: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+/* Post */
+
+.post {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -4px;
+    padding: 0;
+}
+
+.egg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.eggText {
+    width: 50%;
+    float: left;
+    padding-top: 10%;
+    padding-bottom: 10.1%; 
+}
+
+.title {
+    font-family: 'Lovinn', sans-serif;
+    margin-left: 25%;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 40px;
+    color: #333;
+}
+
+.eggDescription {
+    font-family: 'Lovinn', sans-serif;
+    margin-left: 25%;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #7a7a7a;
+    margin-bottom: 5%;
+}
+
+.click {
+    font-family: 'Lovinn', sans-serif;
+    font-weight: 800;
+    color: #120836;
+    letter-spacing: 2px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+
+
+.imageEgg {
+    width: 50%;
+    float: right;
+}
+
+.glass {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.glassText {
+    width: 50%;
+    float: right;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.imageGlass {
+    width: 50%;
+    float: left;
+}
+
+.glassTitle {
+    font-family: 'Lovinn', sans-serif;
+    margin-left: 25%;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 40px;
+    color: #333;
+}
+
+.glassDescription {
+    font-family: 'Lovinn', sans-serif;
+    margin-left: 25%;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #7a7a7a;
+    margin-bottom: 5%;
+}
+
+.glassClick {
+    font-family: 'Lovinn', sans-serif;
+    font-weight: 800;
+    color: #120836;
+    letter-spacing: 2px;
+    margin-left: 25%;
+    margin-bottom: 20px; 
+}
+
+.fruit {
+    width: 100%;
+    padding: 0;
+    margin: 0;  
+    display: inline-block;
+    
+}
+
+.fruit .imageBerry {
+    width: 50%;
+    float: left;
+}
+
+.fruit .imageOrange {
+    width: 50%;
+    float: right;
+}
+
+.berryAbout {
+    position: relative;
+    left: 23%;
+    top: 120px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.berryTitle {
+    font-family: 'Lovinn', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #285b52;
+}
+
+.berryDescription {
+    font-family: 'Lovinn', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #285b52;
+}
+
+.orangeAbout {
+    position: relative;
+    float: right;
+    left: 30px;
+    bottom: 270px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.orangeTitle {
+    font-family: 'Lovinn', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #285b52;
+}
+
+.orangeDescription {
+    font-family: 'Lovinn', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #285b52;
+}
+
+.galery {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;   
+}
+
+.galery .imageGallery {
+    width: 25%;
+    float: left;
+}
+
+.testimonials {
+    width: 100%;
+    height: 100%;
+    margin-top: -12%;
+    margin-bottom: 10%;
+   
+}
+
+.emily {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.imageTestimonials {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 7%;
+}
+
+.testimonialDescr {
+    font-size: 14px;
+    color: #7a7a7a;
+    font-family: 'Lovinn', sans-serif;
+    line-height: 25px;
+    font-weight: 600;
+    margin-bottom: 12%;
+
+}
+
+.nameTestimonials {
+    font-family: 'Lovinn', sans-serif;
+    color: #120836;
+    font-weight: 800;
+}
+
+.positionTestimonials {
+    font-family: 'Lovinn', sans-serif;
+    color: #b8b7a9;
+    margin-bottom: 30%;
+}
+
+.thomas {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.jennie {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-family: 'Lovinn', sans-serif;
+    font-size: 20px;
+    margin-bottom: 7%;
+    text-align: center;
+    color: #c6c3c3;
+    letter-spacing: 5px;
+}
+
+.footer {
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 7%;
+    background-color: #94ded3;
+    margin-top: -4px;
+}
+
+.footer h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+    color: #297c6e;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    margin-bottom: 4%;
+}
+
+.navFooter {
+    margin-bottom: 11%;
+}
+
+.navigationList {
+    padding: 0;
+    margin: 0;
+    margin-left: 40.5%;
+    list-style: none;
+
+}
+
+.navigationList > li {
+    float: left;
+}
+
+.navigationList > li a {
+    font-family: 'Lovinn', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0 15px;
+    color: #297c6e;
+}
+
+.socialMedia {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: 44%;
+}
+
+.socialMedia > li {
+    float: left;
+}
+
+.socialMedia > li a {
+    padding: 0 10px;
+}
+
+
+
+
+
+
+
