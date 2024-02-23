@@ -1,5 +1,157 @@
-h1 {color: green;}
-h1 {font-size: 40;}
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ededed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-h2 {color: brown;}
-h2 {font-size: 30;}
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2.5;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    padding: 30px;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+    .positionContainer {
+        flex-direction: row;
+    }
+    .positionContainerRow {
+      flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        justify-content: start;
+        align-items: start;
+    }
+    .positionContainer {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+    .positionContainerRow {
+      flex-direction: column;
+    }
+}
+
+.positionContainer {
+    display: flex;
+    flex-grow: 1;
+    max-width: 1024px;
+    gap: 30px;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.positionContainerRow {
+    display: flex;
+    gap: 30px;
+}
+
+.positionContainerRow:not(:last-child) {
+    margin-bottom: 30px;
+
+}
+
+article h2 {
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+article p {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 58px 68px 50px -60px #0000004d;
+    scale: 1;
+    transition: all 0.2s;
+}
+
+article:hover {
+    scale: 0.98;
+    box-shadow: 58px 68px 18px -73px #0000004d;
+}
+
+.boxViolet {
+    color: white;
+    background: url('./StarImg.png') no-repeat top right 80px, rgb(100, 51, 169);
+    background-color: blueviolet;
+
+}
+
+.boxGray {
+    color: white;
+    background-color: rgb(111, 107, 114);
+}
+
+.boxWhite {
+    color: rgb(78, 73, 73);
+    background-color:white;
+}
+
+.boxDark {
+    color: white;
+    background-color: rgb(13, 6, 49);
+}
+
+img {
+    width: 65px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid white;
+}
+
+.user {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user figcaption {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.user figcaption .name {
+    font-weight: 600;
+}
+
+.user figcaption .status {
+    opacity: 0.8;
+}
