@@ -4,28 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="./src/style.css" rel="stylesheet">
 </head>
 <body>
-    <button onclick="toggleFullscreen()">Toggle Fullscreen</button>
-    <div id="fullscreenElement" style="width: 500; height: 700; border: 2px solid black;">
-    <p>This is an element to enter fullscreen.</p>
-    </div>
-    <script>
-        function toggleFullscreen() {
-            var element = document.getElementById('fullscreenElement');
+    <div class="container">
+    <div class="positionContainer">
+    <div class="leftContainer">
+    <div class="positionContainerRow">
+         <article class="boxViolet flex-2">
+            <figure class="user">
+                <img src="https://st4.depositphotos.com/6903990/27898/i/450/depositphotos_278981062-stock-photo-beautiful-young-woman-clean-fresh.jpg" />
+                <figcaption>
+                    <span class="name">Some Name</span>
+                    <span class="status">Verified</span>
+                </figcaption>
+            </figure>
+            <h2>I received a job offer mid-course</h2>
+                        <p>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+         </article>
 
-            if (document.fullscreenElement) {
-                document.exitFullscreen();
-                element.style.background = 'white';
-                element.style.color = 'black';
-            } else {
-                element.requestFullscreen().catch(err) = {
-                console.error('Error attempting to enable fullscreen:', err);
-                };
-                element.style.background = 'black';
-                element.style.color = 'white';
-            }
-        }
-    </script>
+         <article class="boxGray flex-1">
+            <figure class="user">
+                <img src="https://st3.depositphotos.com/14803258/18261/i/450/depositphotos_182619182-stock-photo-woman.jpg" />
+                <figcaption>
+                    <span class="name">Some Name</span>
+                    <span class="status">Verified</span>
+                </figcaption>
+            </figure>
+            <h2>I received a job offer mid-course</h2>
+                        <p>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+         </article>
+
+    </div>
+
+    <div class="positionContainerRow">
+        <article class="boxWhite flex-1">
+            <figure class="user">
+                <img src="https://cdn.goodhouse.com.ua/images-jpg/17657/176570.jpg" />
+                <figcaption>
+                    <span class="name">Some Name</span>
+                    <span class="status">Verified</span>
+                </figcaption>
+            </figure>
+            <h2>I received a job offer mid-course</h2>
+                        <p>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+         </article>
+
+         <article class="boxDark flex-2">
+            <figure class="user">
+                <img src="https://fs02.vseosvita.ua/0200iuf6-6806-620x426.jpg" />
+                <figcaption>
+                    <span class="name">Some Name</span>
+                    <span class="status">Verified</span>
+                </figcaption>
+            </figure>
+            <h2>I received a job offer mid-course</h2>
+                        <p>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+         </article>
+
+    </div>
+    </div>
+    
+    <div class="rightContainer">
+        <article class="boxWhite flex-1">
+            <figure class="user">
+                <img src="https://cdn.goodhouse.com.ua/images-jpg/17657/176570.jpg" />
+                <figcaption>
+                    <span class="name">Some Name</span>
+                    <span class="status">Verified</span>
+                </figcaption>
+            </figure>
+            <h2>I received a job offer mid-course</h2>
+                        <p>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+        </article>
+    </div>
+    
 </body>
 </html>
