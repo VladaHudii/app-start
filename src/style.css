@@ -1,17 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/rounded-sans');
 
-:root {
-    --fullWidth: 100%;
-    --spaceElement: 30px;
-}
 
 @media screen and (min-width: 901px) {
     .mobileMenuButton {
         display: none;
     }
-   
-
-    
 
     /* Navigation */
     .back > header {
@@ -42,12 +35,10 @@
         text-decoration: none;
         padding: 0 15px;
     }
-
     .back .navigation li:nth-child(4) {
         margin: -9px;
         margin-left: 10px;
     }
-
     .back .navigationList .button {
         display: inline-block;
         background-color: rgb(250, 247, 247);
@@ -59,14 +50,114 @@
         font-weight: 400;
         padding: 10px 20px;
         border-radius: 25px;
-
     }
-
     .back> header ul.navigationList > li a:hover {
         color: #d7a312;
         text-decoration: dotted;
     }
+
+
+    .logoLink {
+        font-size: 32px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 40%;
+        font-size: 40px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .arrow {
+        top: 65%;
+        left: 50%;
+        font-size: 124px;
+    }
+
+    .eggText {
+        width: 50%;
+        padding-top: 10%;
+        padding-bottom: 10.1%;
+    }
+
+    .title {
+        margin-left: 25%;
+    }
+   
+    .eggDescription {
+        margin-left: 25%;
+    }
+   
+    .click {
+        margin-left: 25%;
+    }
+
+    .imageEgg {
+        width: 50%;
+    }
+
+    .glass {
+        width: 100%;
+    }
+
+    .glassText {
+        width: 50%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .glassTitle {
+        margin-left: 25%;
+    }
+   
+    .glassDescription {
+        margin-left: 25%;
+    }
+   
+    .glassClick {
+        margin-left: 25%;
+    }
+
+    .imageGlass {
+        width: 50%;
+    }
+
+    .fruit .imageBerry {
+        width: 50%;
+    }
+
+    .fruit .imageOrange {
+        width: 50%;
+    }
+
+    .emily {
+        width: 33.3%;
+    }
+
+    .thomas {
+        width: 33.3%;
+    }
+
+    .jennie {
+        width: 33.3%;
+    }
+
+    .galery {
+        width: 100%;
+        margin: 0;
+        padding: 0;  
+    }
+
+    .galery .imageGallery {
+        width: 25%;
+    }
+
+    .navFooter {
+        margin-bottom: 7%;
+    }   
 }
+
 
 @media screen and (max-width: 900px) {
     .mobileMenuButton {
@@ -103,7 +194,103 @@
         padding: 0;
     }
 
-    
+
+    .logoLink {
+        font-size: 20px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 11%;
+        font-size: 20px;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+   
+    .arrow {
+        bottom: -60%;
+        font-size: 50px;
+    }
+
+    .eggText {
+        width: 100%;
+        padding: 30px 0 30px 0;
+        text-align: center;
+    }
+
+    .title {
+        margin-left: 0;
+    }
+   
+    .eggDescription {
+        margin-left: 0;
+    }
+   
+    .click {
+        margin-left: 0;
+    }
+
+    .imageEgg {
+        width: 100%;
+    }
+
+    .glassText {
+        width: 100%;
+        padding: 30px 0 30px 0;
+        text-align: center;
+    }
+
+    .glassTitle {
+        margin-left: 0;
+    }
+   
+    .glassDescription {
+        margin-left: 0;
+    }
+   
+    .glassClick {
+        margin-left: 0;
+    }
+
+    .imageGlass {
+        width: 100%;
+    }
+
+    .fruit .imageBerry {
+        width: 100%;
+    }
+
+    .fruit .imageOrange {
+        width: 100%;
+    }
+
+    .emily {
+        width: 100%;
+    }
+
+    .thomas {
+        width: 100%;
+    }
+
+    .jennie {
+        width: 100%;
+    }
+
+    .galery {
+        width: 100%;
+        margin: 0;
+        padding: 0;  
+    }
+   
+    .galery .imageGallery {
+        width: 50%;
+    }
+
+    .navFooter {
+        margin-bottom: 9%;
+    }
+   
 }
 
 body {
@@ -114,53 +301,85 @@ body {
 }
 
 /* Logo */
-.container > header .logoLink {
+/* .container > header .logoLink {
+    float: left;
+} */
+
+/* .back > header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 30px;
+}
+.back > header .navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 22px;
+}
+.back > header ul.navigationList  {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.back > header ul.navigationList > li {
     float: left;
 }
+.back > header ul.navigationList > li a {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #120836;
+    text-decoration: none;
+    padding: 0 15px;
+} */
+
+
 .logoLink {
     position: absolute;
-    font-size: 32px;
-    margin-left: auto;
+    float: left;
     margin: 30px;
-    margin-right: auto;
     font-weight: 800;
     color: #ffffff;
     text-decoration: none;
     font-family: 'Schibsted Grotesk', sans-serif;
 }
 
-/* Main seaction */
 
+/* Main seaction */
 .back {
     width: 100%;
+    max-width: 1024px;
     position: relative;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
 }
 
+.mainSection {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .centered {
-    position: absolute;
-    top: 40%;
-    left: 50%;
     color: #ffffff;
     font-weight: 900;
-    font-size: 40px;
     letter-spacing: 9px;
     font-family: 'Rounded Sans', sans-serif;
-    transform: translate(-50%, -50%);
 }
 
 .arrow {
     position: absolute;
     top: 65%;
     left: 50%;
-    font-size: 124px;
     color: #ffffff;
     transform: translate(-50%, -50%);
 }
 
 /* Post */
-
 .post {
     width: 100%;
     height: 100%;
@@ -182,15 +401,11 @@ body {
 }
 
 .eggText {
-    width: 50%;
     float: left;
-    padding-top: 10%;
-    padding-bottom: 10.1%; 
 }
 
 .title {
     font-family: 'Lovinn', sans-serif;
-    margin-left: 25%;
     font-size: 35px;
     font-weight: 800;
     line-height: 40px;
@@ -199,7 +414,6 @@ body {
 
 .eggDescription {
     font-family: 'Lovinn', sans-serif;
-    margin-left: 25%;
     font-size: 13px;
     line-height: 20px;
     font-weight: 600;
@@ -212,13 +426,10 @@ body {
     font-weight: 800;
     color: #120836;
     letter-spacing: 2px;
-    margin-left: 25%;
     margin-bottom: 20px;
 }
 
-
 .imageEgg {
-    width: 50%;
     float: right;
 }
 
@@ -229,20 +440,15 @@ body {
 }
 
 .glassText {
-    width: 50%;
     float: right;
-    padding-top: 10%;
-    padding-bottom: 10%;
 }
 
 .imageGlass {
-    width: 50%;
     float: left;
 }
 
 .glassTitle {
     font-family: 'Lovinn', sans-serif;
-    margin-left: 25%;
     font-size: 35px;
     font-weight: 800;
     line-height: 40px;
@@ -251,7 +457,6 @@ body {
 
 .glassDescription {
     font-family: 'Lovinn', sans-serif;
-    margin-left: 25%;
     font-size: 13px;
     line-height: 20px;
     font-weight: 600;
@@ -264,8 +469,7 @@ body {
     font-weight: 800;
     color: #120836;
     letter-spacing: 2px;
-    margin-left: 25%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .fruit {
@@ -273,16 +477,13 @@ body {
     padding: 0;
     margin: 0;  
     display: inline-block;
-    
 }
 
 .fruit .imageBerry {
-    width: 50%;
     float: left;
 }
 
 .fruit .imageOrange {
-    width: 50%;
     float: right;
 }
 
@@ -292,21 +493,21 @@ body {
     top: 120px;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Lovinn', sans-serif;
+    color: #285b52;
 }
 
 .berryTitle {
-    font-family: 'Lovinn', sans-serif;
     font-size: 30px;
     font-weight: 700;
-    color: #285b52;
 }
 
 .berryDescription {
-    font-family: 'Lovinn', sans-serif;
     font-size: 15px;
     font-weight: 700;
     line-height: 22px;
-    color: #285b52;
+
+
 }
 
 .orangeAbout {
@@ -334,14 +535,12 @@ body {
 }
 
 .galery {
-    width: 100%;
     display: inline-block;
     margin: 0;
-    padding: 0;   
+    padding: 0;  
 }
 
 .galery .imageGallery {
-    width: 25%;
     float: left;
 }
 
@@ -354,7 +553,6 @@ body {
 }
 
 .emily {
-    width: 33.3%;
     float: left;
     text-align: center;
 }
@@ -374,6 +572,7 @@ body {
     font-weight: 600;
     margin-bottom: 12%;
 
+
 }
 
 .nameTestimonials {
@@ -389,13 +588,11 @@ body {
 }
 
 .thomas {
-    width: 33.3%;
     float: left;
     text-align: center;
 }
 
 .jennie {
-    width: 33.3%;
     float: left;
     text-align: center;
 }
@@ -426,16 +623,12 @@ body {
     margin-bottom: 4%;
 }
 
-.navFooter {
-    margin-bottom: 11%;
-}
-
 .navigationList {
     padding: 0;
     margin: 0;
-    margin-left: 40.5%;
+    display: flex;
+    justify-content: center;
     list-style: none;
-
 }
 
 .navigationList > li {
@@ -455,7 +648,8 @@ body {
     padding: 0;
     margin: 0;
     list-style: none;
-    margin-left: 44%;
+    display: flex;
+    justify-content: center;
 }
 
 .socialMedia > li {
@@ -465,10 +659,3 @@ body {
 .socialMedia > li a {
     padding: 0 10px;
 }
-
-
-
-
-
-
-
