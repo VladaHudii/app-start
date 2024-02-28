@@ -1,0 +1,60 @@
+@mixin zero-distance( $padding: null, $margin: null ) {
+padding: 0;
+margin: 0;
+
+@if $padding != null {
+    padding: $padding;
+}
+
+@if $margin != null {
+    margin: $margin;
+}
+}
+
+@mixin fullscreen( $width: null, $height: null ) {
+    width: 100%;
+    height: 100%;
+
+@if $width != null {
+    width: $width;
+}
+@if $height != null {
+    height: $height;
+}
+}
+
+@mixin parameters( $top: null, $bottom: null, $right: null ) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@mixin flex-container( $direction: null, $justify: null, $list-style: null ) {
+    display: flex;
+
+    @if $direction != null {
+        flex-direction: $direction;
+    }
+    @if $justify != null {
+        justify-content: $justify;
+}
+   @if $list-style != null {
+    list-style: $list-style;
+}
+}
+
+@mixin direction( $text-align: null, $position: null, $float: null, $display ) {
+
+   @if $text-align != null {
+    text-align: $text-align; 
+} 
+   @if $position != null {
+    position: $position;
+}
+   @if $float != null {
+    float: $float;
+}
+   @if $display != null {
+   display: $display;
+}
+}

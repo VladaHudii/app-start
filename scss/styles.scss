@@ -1,0 +1,455 @@
+@import "maps";
+@import "variables";
+@import "mixins";
+
+@import url('https://fonts.cdnfonts.com/css/rounded-sans');
+
+
+@media screen and (min-width: 901px) {
+    .mobileMenuButton {
+        display: none;
+    }
+
+    /* Navigation */
+    .back > header {
+        width: auto;
+        background-color: #2acae4;
+    }
+    .back > header .navigation {
+        position: absolute;
+        margin: 55px;
+        height: calc($thirty/3);
+        @include parameters;
+    }
+    .back > header ul.navigationList {
+        @include zero-distance;
+        list-style: none;
+    }
+    .back > header ul.navigationList > li {
+        float: left;
+    }
+    .back > header ul.navigationList > li a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(247, 245, 245);
+        text-decoration: none;
+        padding: $halfPad;
+    }
+    .back .navigation li:nth-child(4) {
+        margin: -9px;
+        margin-left: calc($thirty/3);
+    }
+    .back .navigationList .button {
+        display: inline-block;
+        background-color: $white;
+        text-transform: none;
+        text-decoration: none;
+        color: black;
+        letter-spacing: 1px;
+        font-family: $font-title;
+        font-weight: 400;
+        padding: 10px $twenty;
+        border-radius: 25px;
+    }
+    .back> header ul.navigationList > li a:hover {
+        color: #d7a312;
+        text-decoration: dotted;
+    }
+
+    .logoLink {
+        font-size: 32px;
+    }
+    .centered {
+        position: absolute;
+        top: 40%;
+        font-size: calc($twenty * 2);
+        left: $half;
+        transform: $transform;
+    }
+    .arrow {
+        top: 65%;
+        left: $half;
+        font-size: 124px;
+    }
+
+    .title, .eggDescription, .click {
+        margin-left: calc($half/2);
+    }
+    .glass {
+        width: calc($half * 2);
+    }
+    .glassText, .eggText {
+        width: $half;
+        padding-top: calc($half/5);
+        padding-bottom: calc($half/5);
+    }
+    .glassTitle, .glassDescription, .glassClick {
+        margin-left: calc($half/2);
+    }
+
+    .imageBerry, .imageOrange, .imageGlass, .imageEgg {
+        width: $half;
+    }
+
+    .berryAbout {
+        left: 23%;
+        top: 120px;
+    }
+    .orangeAbout {
+        left: $thirty;
+        bottom: 270px;
+    }
+
+    .galery {
+        width: calc($half * 2); 
+        @include zero-distance;
+    }
+    .galery .imageGallery {
+        width: calc($half/2);
+    }
+
+    .testimonials {
+        margin-top: -12%;
+        margin-bottom: 10%;
+    }
+    .testimonials h2 {
+        margin-bottom: 7%;
+    }
+    .emily, .thomas, .jennie {
+        width: 33.3%;
+    }
+
+    .navFooter {
+        margin-bottom: 7%;
+    }   
+}
+
+
+@media screen and (max-width: 900px) {
+    .mobileMenuButton {
+        @include parameters;
+        margin: auto;
+        height: 50px;    
+        background: transparent;
+        border: none;
+        @include direction(null, absolute, null, block);
+    }
+    .mobileMenuButton span {
+        display: block;
+        background-color: $gray;
+        height: 3px;
+        width: $thirty;
+        margin-bottom: 6px;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+    .mobileMenuButton.open span:nth-child(1), .mobileMenuButton.open span:nth-child(3) {
+        transform: $transform-rotate;
+    }
+    .mobileMenuButton.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mainSection .post {
+        width: calc($half * 2);
+        @include zero-distance;
+    }
+
+    .logoLink {
+        font-size: calc($thirty/2);
+    }
+    .centered {
+        top: 11%;
+        font-size: $twenty;
+        left: $half;
+        transform: $transform;
+        @include direction (center, absolute, null, null);
+    }
+    .arrow {
+        bottom: -60%;
+        font-size: 50px;
+    }
+    .eggText, .glassText {
+        width: calc($half * 2);
+        padding: $pad;
+        text-align: center;
+    }
+
+    .berryAbout {
+        left: $half;
+        top: -80px;
+    }
+    .orangeAbout {
+        left: 30%;
+        bottom: 200px;
+    }
+
+    .imageBerry, .imageOrange, .imageGlass, .imageEgg  {
+        width: calc($half * 2);
+    }
+
+    .testimonials {
+        margin-top: -40%;
+        margin-bottom: 10%;
+    }
+    .testimonials h2 {
+        margin-bottom: calc($half/2);
+    }
+    .emily, .thomas, .jennie {
+        width: calc($half * 2);
+    }
+
+    .galery {
+        width: calc($half * 2);
+        @include zero-distance;  
+    }
+    .galery .imageGallery {
+        width: $half;
+    }
+
+    .navFooter {
+        margin-bottom: 9%;
+    } 
+}
+
+
+body {
+    @include zero-distance;
+    @include fullscreen;
+    font-family: $font-main;
+}
+.logoLink {
+    @include direction(null, absolute, left, null);
+    margin: $thirty;
+    font-weight: 800;
+    color: $white;
+    text-decoration: none;
+    font-family: $font-logo;
+}
+
+/* Main seaction */
+.back {
+    @include fullscreen;
+    max-width: 1024px;
+    position: relative;
+    margin: 0 auto;
+}
+.mainSection {
+    width: calc($half * 2);
+    @include zero-distance;
+}
+.centered {
+    color: $white;
+    font-weight: 900;
+    letter-spacing: 9px;
+    font-family: $font-title;
+}
+.arrow {
+    position: absolute;
+    top: 65%;
+    left: $half;
+    color: $white;
+    transform: $transform;
+}
+.post {
+    @include fullscreen;
+    @include zero-distance;
+}
+.image {
+    @include fullscreen;
+    margin-bottom: -4px;
+    padding: 0;
+}
+
+
+/*Egg*/
+.egg {
+    width: calc($half * 2);
+    @include zero-distance;
+}
+.eggText {
+    float: left;
+}
+.title {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 40px;
+    color: $gray;
+}
+.eggDescription {
+    font-size: 13px;
+    line-height: $twenty;
+    font-weight: 600;
+    color: $lightGray;
+    margin-bottom: 5%;
+}
+.click {
+    font-weight: 800;
+    color: $blue;
+    letter-spacing: 2px;
+    margin-bottom: $twenty;
+}
+.imageEgg {
+    float: right;
+}
+
+
+/*Glass*/
+.glass {
+    width: calc($half * 2);
+    @include zero-distance;
+}
+.glassText {
+    float: right;
+}
+.imageGlass {
+    float: left;
+}
+.glassTitle {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 40px;
+    color: $gray;
+}
+.glassDescription {
+    font-size: 13px;
+    line-height: $twenty;
+    font-weight: 600;
+    color: $lightGray;
+    margin-bottom: 5%;
+}
+.glassClick {
+    font-weight: 800;
+    color: $blue;
+    letter-spacing: 2px;
+    margin-bottom: $twenty;
+}
+
+
+/*Fruit*/
+.fruit {
+    width: calc($half * 2);
+    @include zero-distance; 
+    display: inline-block;
+}
+.fruit .imageBerry, .imageOrange {
+    float: left;
+}
+.berryAbout {
+    transform: $transform;
+    color: $green;
+    @include direction(center, relative, null, null);
+}
+.berryTitle {
+    font-size: $thirty;
+    font-weight: $font-weight;
+}
+.berryDescription {
+    font-size: calc($thirty/2);
+    font-weight: $font-weight;
+    line-height: 22px;
+}
+.orangeAbout {
+    transform: $transform;
+    @include direction(center, relative, right, null);
+}
+.orangeTitle {
+    font-size: $thirty;
+    font-weight: $font-weight;
+    color: $green;
+}
+.orangeDescription {
+    font-size: calc($thirty/2);
+    font-weight: $font-weight;
+    line-height: 22px;
+    color: $green;
+}
+
+
+/*Galery*/
+.galery {
+    display: inline-block;
+    @include zero-distance; 
+}
+.galery .imageGallery {
+    float: left;
+}
+
+
+/*Testimonials*/
+.testimonials {
+    @include fullscreen;
+}
+.imageTestimonials {
+    border-radius: $half;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 7%;
+}
+.testimonialDescr {
+    font-size: 14px;
+    color: $lightGray;
+    line-height: 25px;
+    font-weight: 600;
+    margin-bottom: 12%;
+}
+.nameTestimonials {
+    color: $blue;
+    font-weight: 800;
+}
+.positionTestimonials {
+    color: $semiGray;
+    margin-bottom: 30%;
+}
+.thomas, .jennie, .emily {
+    @include direction(center, null, left, null);
+}
+.testimonials h2 {
+    font-size: $twenty;
+    text-align: center;
+    color: $semiGray;
+    letter-spacing: 5px;
+}
+
+
+/*Footer*/
+.footer {
+    width: calc($half * 2);
+    padding-top: 3%;
+    padding-bottom: 7%;
+    background-color: #94ded3;
+    margin-top: -4px;
+}
+.footer h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+    color: $green;
+    font-family: $font-logo;
+    margin-bottom: 4%;
+}
+.navigationList {
+    @include zero-distance;
+    @include flex-container (row, center, none);
+}
+.navigationList > li {
+    float: left;
+}
+.navigationList > li a {
+    font-size: calc($thirty/2);
+    font-weight: 500;
+    text-decoration: none;
+    padding: $halfPad;
+    color: $green;
+}
+.socialMedia {
+    @include zero-distance;
+    @include flex-container (row, center, none);
+
+}
+.socialMedia > li {
+    float: left;
+}
+.socialMedia > li a {
+    padding: 0 10px;
+}

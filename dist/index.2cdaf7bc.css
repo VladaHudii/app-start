@@ -1,15 +1,565 @@
-h1 {
-  color: green;
-  font-size: 40px;
+@import "https://fonts.cdnfonts.com/css/rounded-sans";
+@media screen and (width >= 901px) {
+  .mobileMenuButton {
+    display: none;
+  }
+
+  .back > header {
+    background-color: #2acae4;
+    width: auto;
+  }
+
+  .back > header .navigation {
+    height: 10px;
+    margin: 55px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .back > header ul.navigationList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .back > header ul.navigationList > li {
+    float: left;
+  }
+
+  .back > header ul.navigationList > li a {
+    color: #f7f5f5;
+    padding: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .back .navigation li:nth-child(4) {
+    margin: -9px -9px -9px 10px;
+  }
+
+  .back .navigationList .button {
+    text-transform: none;
+    color: #000;
+    letter-spacing: 1px;
+    background-color: #faf7f7;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-family: Rounded Sans, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .back > header ul.navigationList > li a:hover {
+    color: #d7a312;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+  }
+
+  .logoLink {
+    font-size: 32px;
+  }
+
+  .centered {
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .arrow {
+    font-size: 124px;
+    top: 65%;
+    left: 50%;
+  }
+
+  .eggText {
+    width: 50%;
+    padding-top: 10%;
+    padding-bottom: 10.1%;
+  }
+
+  .title, .eggDescription, .click {
+    margin-left: 25%;
+  }
+
+  .imageEgg {
+    width: 50%;
+  }
+
+  .glass {
+    width: 100%;
+  }
+
+  .glassText {
+    width: 50%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .glassTitle, .glassDescription, .glassClick {
+    margin-left: 25%;
+  }
+
+  .imageGlass, .fruit .imageBerry, .fruit .imageOrange {
+    width: 50%;
+  }
+
+  .berryAbout {
+    top: 120px;
+    left: 23%;
+  }
+
+  .orangeAbout {
+    bottom: 270px;
+    left: 30px;
+  }
+
+  .emily, .thomas, .jennie {
+    width: 33.3%;
+  }
+
+  .galery {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .galery .imageGallery {
+    width: 25%;
+  }
+
+  .navFooter {
+    margin-bottom: 7%;
+  }
 }
 
-h2 {
-  color: brown;
+@media screen and (width <= 900px) {
+  .mobileMenuButton {
+    background: none;
+    border: none;
+    height: 50px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .mobileMenuButton span {
+    background-color: #333;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 6px;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+    display: block;
+  }
+
+  .mobileMenuButton.open span:first-child {
+    transform: translateY(9px)rotate(45deg);
+  }
+
+  .mobileMenuButton.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobileMenuButton.open span:nth-child(3) {
+    transform: translateY(-9px)rotate(-45deg);
+  }
+
+  .mainSection .post {
+    width: var(--fullWidth);
+    margin: 0 0 var(--spaceElement) 0;
+    padding: 0;
+  }
+
+  .logoLink {
+    font-size: 15px;
+  }
+
+  .centered {
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .arrow {
+    font-size: 50px;
+    bottom: -60%;
+  }
+
+  .eggText {
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .title, .eggDescription, .click {
+    margin-left: 0;
+  }
+
+  .imageEgg {
+    width: 100%;
+  }
+
+  .glassText {
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .glassTitle, .glassDescription, .glassClick {
+    margin-left: 0;
+  }
+
+  .berryAbout {
+    top: -80px;
+    left: 50%;
+  }
+
+  .orangeAbout {
+    bottom: 200px;
+    left: 30%;
+  }
+
+  .imageGlass, .fruit .imageBerry, .fruit .imageOrange, .emily, .thomas, .jennie {
+    width: 100%;
+  }
+
+  .galery {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .galery .imageGallery {
+    width: 50%;
+  }
+
+  .navFooter {
+    margin-bottom: 9%;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logoLink {
+  float: left;
+  color: #fff;
+  margin: 30px;
+  font-family: Schibsted Grotesk, sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  position: absolute;
+}
+
+.back {
+  width: 100%;
+  max-width: 1024px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mainSection {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.centered {
+  color: #fff;
+  letter-spacing: 9px;
+  font-family: Rounded Sans, sans-serif;
+  font-weight: 900;
+}
+
+.arrow {
+  color: #fff;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.post {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -4px;
+  padding: 0;
+}
+
+.egg {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.eggText {
+  float: left;
+}
+
+.title {
+  color: #333;
+  font-family: Lovinn, sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.eggDescription {
+  color: #7a7a7a;
+  margin-bottom: 5%;
+  font-family: Lovinn, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.click {
+  color: #120836;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-family: Lovinn, sans-serif;
+  font-weight: 800;
+}
+
+.imageEgg {
+  float: right;
+}
+
+.glass {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.glassText {
+  float: right;
+}
+
+.imageGlass {
+  float: left;
+}
+
+.glassTitle {
+  color: #333;
+  font-family: Lovinn, sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.glassDescription {
+  color: #7a7a7a;
+  margin-bottom: 5%;
+  font-family: Lovinn, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.glassClick {
+  color: #120836;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-family: Lovinn, sans-serif;
+  font-weight: 800;
+}
+
+.fruit {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.fruit .imageBerry {
+  float: left;
+}
+
+.fruit .imageOrange {
+  float: right;
+}
+
+.berryAbout {
+  text-align: center;
+  color: #285b52;
+  font-family: Lovinn, sans-serif;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+
+.berryTitle {
   font-size: 30px;
+  font-weight: 700;
 }
 
-title {
-  color: #7fffd4;
+.berryDescription {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.orangeAbout {
+  float: right;
+  text-align: center;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+
+.orangeTitle {
+  color: #285b52;
+  font-family: Lovinn, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.orangeDescription {
+  color: #285b52;
+  font-family: Lovinn, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.galery {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.galery .imageGallery {
+  float: left;
+}
+
+.testimonials {
+  width: 100%;
+  height: 100%;
+  margin-top: -12%;
+  margin-bottom: 10%;
+}
+
+.emily {
+  float: left;
+  text-align: center;
+}
+
+.imageTestimonials {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 7%;
+}
+
+.testimonialDescr {
+  color: #7a7a7a;
+  margin-bottom: 12%;
+  font-family: Lovinn, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.nameTestimonials {
+  color: #120836;
+  font-family: Lovinn, sans-serif;
+  font-weight: 800;
+}
+
+.positionTestimonials {
+  color: #b8b7a9;
+  margin-bottom: 30%;
+  font-family: Lovinn, sans-serif;
+}
+
+.thomas, .jennie {
+  float: left;
+  text-align: center;
+}
+
+.testimonials h2 {
+  text-align: center;
+  color: #c6c3c3;
+  letter-spacing: 5px;
+  margin-bottom: 7%;
+  font-family: Lovinn, sans-serif;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #94ded3;
+  width: 100%;
+  margin-top: -4px;
+  padding-top: 3%;
+  padding-bottom: 7%;
+}
+
+.footer h2 {
+  text-align: center;
+  color: #297c6e;
+  margin-bottom: 4%;
+  font-family: Schibsted Grotesk, sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.navigationList {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navigationList > li {
+  float: left;
+}
+
+.navigationList > li a {
+  color: #297c6e;
+  padding: 0 15px;
+  font-family: Lovinn, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.socialMedia {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.socialMedia > li {
+  float: left;
+}
+
+.socialMedia > li a {
+  padding: 0 10px;
 }
 
 /*# sourceMappingURL=index.2cdaf7bc.css.map */
